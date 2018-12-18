@@ -1,0 +1,66 @@
+data:
+  type: npy
+  train_dir: data/celebA-HQ
+  test_dir: data/celebA-HQ
+  lsun_categories_train: [bedroom_train] 
+  lsun_categories_test: [bedroom_test]
+  img_size: 1024
+  nlabels: 1
+generator:
+  name: resnet
+  kwargs:
+    nfilter: 16
+    nfilter_max: 512
+    embed_size: 1
+discriminator:
+  name: resnet
+  kwargs:
+    nfilter: 16
+    nfilter_max: 512
+    embed_size: 1
+    vgan_latent_dim: 512
+z_dist:
+  type: gauss
+  dim: 256
+training:
+  out_dir: output/celebAHQ_vgan_tg.1_gradpenal
+  gan_type: standard
+  reg_type: vgan_real
+  reg_param: .1
+  batch_size: 8
+  nworkers: 0
+  take_model_average: true
+  model_average_beta: 0.999
+  model_average_reinit: false
+  monitoring: tensorboard
+  sample_every: 1000
+  sample_nlabels: 20
+  inception_every: -1
+  compute_fid: false
+  fid_sample_size: 10000  
+  save_every: 900
+  backup_every: 100000
+  stop_epoch: 100000
+  restart_every: -1
+  optimizer: rmsprop
+  lr_g: 0.0001
+  lr_d: 0.0001
+  lr_anneal: 1.
+  lr_anneal_every: 150000
+  d_steps: 1
+  equalize_lr: false
+  adaptive_beta: true
+  kwargs:
+    beta_step: 0.00001
+    target_kl: 0.1
+test:
+  batch_size: 4
+  sample_size: 4
+  sample_nrow: 4
+  use_model_average: true
+  compute_inception: false
+  fid_sample_size: 10000    
+  conditional_samples: true
+interpolations:
+  nzs: 8
+  nsubsteps: 75

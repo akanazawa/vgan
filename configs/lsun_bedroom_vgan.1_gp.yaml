@@ -1,0 +1,65 @@
+data:
+  type: lsun
+  train_dir: data/LSUN
+  test_dir: data/LSUN
+  lsun_categories_train: [bedroom_train]
+  lsun_categories_test: [bedroom_test]
+  img_size: 256
+  nlabels: 1
+generator:
+  name: resnet
+  kwargs:
+    nfilter: 64
+    nfilter_max: 1024
+    embed_size: 1
+discriminator:
+  name: resnet
+  kwargs:
+    nfilter: 64
+    nfilter_max: 1024
+    embed_size: 1
+    vgan_latent_dim: 1024
+z_dist:
+  type: gauss
+  dim: 256
+training:
+  out_dir: output/lsun_bedroom_vgantg.1_gradpenal
+  gan_type: standard
+  reg_type: vgan_real
+  reg_param: .1
+  batch_size: 32
+  nworkers: 0
+  take_model_average: true
+  model_average_beta: 0.999
+  model_average_reinit: false
+  monitoring: tensorboard
+  sample_every: 5000
+  sample_nlabels: 20
+  inception_every: 10000
+  compute_fid: true
+  fid_sample_size: 10000
+  save_every: 18000
+  backup_every: 100000
+  stop_epoch: 100000
+  restart_every: -1
+  optimizer: rmsprop
+  lr_g: 0.0001
+  lr_d: 0.0001
+  lr_anneal: 1.
+  lr_anneal_every: 150000
+  d_steps: 1
+  equalize_lr: false
+  adaptive_beta: true
+  kwargs:
+    beta_step: 0.00001
+    target_kl: 0.1
+test:
+  batch_size: 32
+  sample_size: 15
+  sample_nrow: 5
+  use_model_average: true
+  compute_inception: true
+  conditional_samples: true
+interpolations:
+  nzs: 10
+  nsubsteps: 75
