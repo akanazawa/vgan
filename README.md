@@ -1,13 +1,3 @@
-# TODO until public:
-[x] clean up code
-[x] models
-[x] train
-[x] metrics
-[x] van\_real to vgan\_real in config & code
-[x] van\_latent\_dim -> vgan\_latent\_dim in config & code
-[x] prepare configs to replicate
-[] test it
-
 # Variational Discriminator Bottleneck
 Code repo for the image generation experiments in [Variational Discriminator Bottleneck: Improving Imitation Learning, Inverse RL, and GANs by Constraining Information Flow](https://xbpeng.github.io/projects/VDB/index.html).
 
