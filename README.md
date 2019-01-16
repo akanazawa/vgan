@@ -3,14 +3,14 @@ Code repo for the image generation experiments in [Variational Discriminator Bot
 
 # Bibtex
 ```
-@article{
+@inproceedings{
 VDBPeng18,
 title={Variational Discriminator Bottleneck: Improving Imitation Learning,
 Inverse RL, and GANs by Constraining Information Flow},
 author = {Peng, Xue Bin and Kanazawa, Angjoo and Toyer, Sam and Abbeel, Pieter
 and Levine, Sergey},
-journal={arXiv preprint arXiv:1810.00821},
-year={2018}
+booktitle={ICLR},
+year={2019}
 }
 ```
 
