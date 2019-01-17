@@ -5,12 +5,12 @@ Code for the image generation experiments in [Variational Discriminator Bottlene
 ```
 @inproceedings{
 VDBPeng18,
-title={Variational Discriminator Bottleneck: Improving Imitation Learning,
-Inverse RL, and GANs by Constraining Information Flow},
-author = {Peng, Xue Bin and Kanazawa, Angjoo and Toyer, Sam and Abbeel, Pieter
-and Levine, Sergey},
-booktitle={ICLR},
-year={2019}
+  title={Variational Discriminator Bottleneck: Improving Imitation Learning,
+  Inverse RL, and GANs by Constraining Information Flow},
+  author = {Peng, Xue Bin and Kanazawa, Angjoo and Toyer, Sam and Abbeel, Pieter
+  and Levine, Sergey},
+  booktitle={ICLR},
+  year={2019}
 }
 ```
 
