@@ -18,7 +18,7 @@ Code for the image generation experiments in [Variational Discriminator Bottlene
 # Acknowledgement
 Our code is built on the GAN implmentation of
 [Which Training Methods for GANs do actually Converge?](https://avg.is.tuebingen.mpg.de/publications/meschedericml2018)
-Mescheder et al. ICML 2018.
+\[Mescheder et al. ICML 2018\].
 This repo adds the VGAN and instance noise implementations and FID computation.
 
 
