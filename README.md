@@ -4,7 +4,7 @@ Code for the image generation experiments in [Variational Discriminator Bottlene
 # Bibtex
 ```
 @inproceedings{
-VDBPeng18,
+  VDBPeng18,
   title={Variational Discriminator Bottleneck: Improving Imitation Learning,
   Inverse RL, and GANs by Constraining Information Flow},
   author = {Peng, Xue Bin and Kanazawa, Angjoo and Toyer, Sam and Abbeel, Pieter
