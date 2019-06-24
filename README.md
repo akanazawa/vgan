@@ -48,4 +48,5 @@ python interpolate.py PATH_TO_CONFIG
 ```
 
 
-
+# Pre-trained model
+A pre-trained model for CelebA-HQ can be found [here](https://drive.google.com/file/d/1qwmQtkGm-i0IKFqSEVWugh4DVpJW4CQJ/view?usp=sharing)
