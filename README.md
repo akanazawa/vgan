@@ -1,6 +1,8 @@
 # Variational Discriminator Bottleneck
 Code for the image generation experiments in [Variational Discriminator Bottleneck: Improving Imitation Learning, Inverse RL, and GANs by Constraining Information Flow](https://xbpeng.github.io/projects/VDB/index.html).
 
+Code for the iRL experiemnts: https://github.com/qxcv/vdb-irl/
+
 # Bibtex
 ```
 @inproceedings{
