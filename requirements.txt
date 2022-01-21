@@ -4,7 +4,7 @@ decorator==4.3.0
 enum34==1.1.6
 imageio==2.3.0
 ipdb==0.10.3
-ipython==4.0.0
+ipython==7.16.3
 ipython-genutils==0.2.0
 kiwisolver==1.0.1
 matplotlib==2.2.3
